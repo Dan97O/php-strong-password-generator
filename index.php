@@ -18,6 +18,10 @@ function passwordGenerate($length)
 }
 //$length = 10;
 //var_dump(passwordGenerate($length))
+
+$length = isset($_GET['length']) ? intval($_GET['length']) : '';
+$password = passwordGenerate($length);
+echo 'Password generata: ' . $password;
 ?>
 
 
