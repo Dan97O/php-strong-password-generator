@@ -44,7 +44,7 @@ $password = passwordGenerate($length);
 
 <div class="container">
   <div class="row">
-    <div class="col mt-5">
+    <div class="col mt-5 p-0">
     <div class="card text-dark shadow">
     <div class="card-body d-flex flex-column align-items-center">
       <h5 class="card-title py-2"> <strong>Generatore di password</strong> </h5>
@@ -61,7 +61,7 @@ $password = passwordGenerate($length);
         <div class="my-2">
           <strong>La tua password generata:</strong>
         </div>
-        <span><?=$password;?> </span>
+        <span class="d-flex flex-column w-100"></span><?=$password;?> </span>
       <?php endif;?>
     </div>
   </div>
