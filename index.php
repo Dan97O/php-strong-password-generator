@@ -22,9 +22,25 @@ $password = passwordGenerate($length);
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/style.css" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
+<body class="vh-100">
+
+<header>
+  <div class="container">
+    <div class="row">
+     <div class="col-12 my-5 d-flex align-items-center flex-column">
+      <h1>
+        Strong Password Generator
+      </h1>
+      <h3>
+        Genera una password sicura
+      </h3>
+     </div>
+    </div>
+  </div>
+</header>
 
 <div class="container">
   <div class="row">
