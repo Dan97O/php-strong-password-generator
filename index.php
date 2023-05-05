@@ -8,3 +8,36 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
  */
 
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col mt-5">
+        <form action="" method="get">
+          <label for="length">Lunghezza password:</label>
+          <input type="number" name="length" id="length" min="1" max="50" required>
+          <button type="submit">Genera password</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
