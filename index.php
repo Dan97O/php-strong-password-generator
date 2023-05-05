@@ -45,19 +45,31 @@ $password = passwordGenerate($length);
 <div class="container">
   <div class="row">
     <div class="col mt-5">
-        <form class="" action="" method="get">
-          <label for="length">Lunghezza password:</label>
-          <input type="number" name="length" id="length" min="6" max="50" required>
-          <button type="submit">Genera password</button>
-        </form>
-        <?php if ($password): ?>
-          <div class="mt-3">
-            <strong>La tua password generata:</strong>
-            <span><?=$password;?> </span>
+    <div class="card text-dark shadow">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h5 class="card-title py-2"> <strong>Generatore di password</strong> </h5>
+      <form action="" method="get">
+        <div class="form-group">
+          <label class="pb-3" for="length">Lunghezza password:</label>
+          <div class="d-flex align-items-baseline gap-3">
+            <input type="number" name="length" id="length" min="6" max="50" class="form-control mb-3" required>
+            <button type="submit" class="btn btn-primary">Genera</button>
           </div>
-        <?php endif;?>
+        </div>
+      </form>
+      <?php if ($password): ?>
+        <div class="my-2">
+          <strong>La tua password generata:</strong>
+        </div>
+        <span><?=$password;?> </span>
+      <?php endif;?>
+    </div>
+  </div>
     </div>
   </div>
 </div>
+
+
+
 </body>
 </html>
