@@ -9,7 +9,7 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
 
 require 'functions.php';
 
-$length = isset($_GET['length']) ? intval($_GET['length']) : '';
+$length = isset($_GET['length']) ? intval($_GET['length']) : 0;
 $password = passwordGenerate($length);
 //echo 'Password generata: ' . $password;
 ?>
