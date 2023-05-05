@@ -11,7 +11,7 @@ require 'functions.php';
 
 $length = isset($_GET['length']) ? intval($_GET['length']) : '';
 $password = passwordGenerate($length);
-echo 'Password generata: ' . $password;
+//echo 'Password generata: ' . $password;
 ?>
 
 
@@ -26,23 +26,22 @@ echo 'Password generata: ' . $password;
 </head>
 <body>
 
-
 <div class="container">
   <div class="row">
     <div class="col mt-5">
-        <form action="" method="get">
+        <form class="" action="" method="get">
           <label for="length">Lunghezza password:</label>
-          <input type="number" name="length" id="length" min="1" max="50" required>
+          <input type="number" name="length" id="length" min="6" max="50" required>
           <button type="submit">Genera password</button>
         </form>
+        <?php if ($password): ?>
+          <div class="mt-3">
+            <strong>La tua password generata:</strong>
+            <span><?=$password;?> </span>
+          </div>
+        <?php endif;?>
     </div>
   </div>
 </div>
-
-
-
-
-
-
 </body>
 </html>
